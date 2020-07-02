@@ -1,6 +1,6 @@
+import sys
 import unittest
-import Nucleotides
-
+from librose import Nucleotides
 
 class TestNucleotides(unittest.TestCase):
 

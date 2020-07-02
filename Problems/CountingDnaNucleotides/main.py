@@ -7,6 +7,7 @@
 
 import sys
 import os
+from librose import Nucleotides
 
 
 def main():
@@ -29,8 +30,4 @@ def main():
     print(tides.get_counts())
 
 if __name__ == "__main__":
-    this_dir = os.path.dirname(__file__)
-    base_dir = os.path.abspath(os.path.join(this_dir, "../.."))
-    sys.path.insert(0, base_dir)
-    from librose import Nucleotides
     main()
