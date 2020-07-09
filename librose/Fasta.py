@@ -23,11 +23,16 @@ class Fasta:
 
 
 class FastaParser:
+    def parse_string(file_name):
+        try:
+            fin = open(file_name, 'r')
+            fin.readlines()
+            print(fin)
 
-    def parse_string(stream):
-        # Couple cases to handle
-        # First, are we given a single string containing all Fasta Strings?
-        # If so we read from > to \n
+
+        except IOError:
+            print "Error: {file_name} does not exist.".format(file_name)
+
 
 
 
